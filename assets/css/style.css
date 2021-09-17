@@ -3,22 +3,23 @@ body {
     background-size: cover;
 }
 .board {
-    width: 800px;
+    width: 400px;
     display: grid;
-    grid-template-columns: repeat(8, 100px);
-    grid-template-rows: repeat(8, 100px);
+    grid-template-columns: repeat(8, 50px);
+    grid-template-rows: repeat(8, 50px);
 }
 .black-tile {
-    background: #779556;
+    background: #afc1d4;
 }
 .white-tile {
-    background: #ebecd0;
+    background: #eeefec;
 }
 
-.flip {
-    -webkit-transform: rotate(180deg);
-    transform: rotate(180deg);
-}
 .piece {
     cursor: pointer;
+}
+.fa-arrows-alt-h {
+    background: rgba(0,0,0,0.3);
+    cursor: se-resize;
+    color: #FFF;
 }
