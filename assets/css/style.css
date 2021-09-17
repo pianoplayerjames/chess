@@ -9,10 +9,10 @@ body {
     grid-template-rows: repeat(8, 50px);
 }
 .black-tile {
-    background: #afc1d4;
+    background: #d2c4d14f;
 }
 .white-tile {
-    background: #eeefec;
+    background: #ffffffc9;
 }
 
 .piece {
