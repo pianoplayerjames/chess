@@ -1,0 +1,24 @@
+body {
+    background: #000 url('../img/bg.jpeg') no-repeat center center fixed;
+    background-size: cover;
+}
+.board {
+    width: 800px;
+    display: grid;
+    grid-template-columns: repeat(8, 100px);
+    grid-template-rows: repeat(8, 100px);
+}
+.black-tile {
+    background: #779556;
+}
+.white-tile {
+    background: #ebecd0;
+}
+
+.flip {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+.piece {
+    cursor: pointer;
+}
