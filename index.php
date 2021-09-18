@@ -63,12 +63,12 @@
     </nav>
     <div class="container mt-5 pt-3">
         <div class="row">
-            <div class="col-lg-8 mt-3">
+            <div id='board_contain' class="col-lg-8 mt-3">
                 <div class="board mx-auto position-relative" data-axis="white" data-game='fb48bgb'>
                     <div class="position-absolute top-100 start-100 p-1 translate-middle fas fa-arrows-alt-h ms-3 shadow" style='margin-top: -12px;'></div>
                 </div>
             </div>
-            <div class="col-lg-4 mt-3">
+            <div class="col-lg-4 g-0 mt-3">
                 <div class="card bg-success rounded shadow">
                     <div class="progress" style="height: 5px;background: none;">
                         <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" style="width: 46%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
