@@ -2,22 +2,25 @@ body {
     background: #000 url('../img/bg.jpeg') no-repeat center center fixed;
     background-size: cover;
 }
+
 .board {
     width: 600px;
     display: grid;
     grid-template-columns: repeat(8, 75px);
     grid-template-rows: repeat(8, 75px);
     -webkit-touch-callout: none;
--webkit-user-select: none;
--khtml-user-select: none;
--moz-user-select: none;
--ms-user-select: none;
-user-select: none;
-outline: 0;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    outline: 0;
 }
+
 .black-tile {
     background: #d2c4d14f;
 }
+
 .white-tile {
     background: #ffffffc9;
 }
@@ -25,14 +28,17 @@ outline: 0;
 .piece {
     cursor: pointer;
 }
+
 .fa-arrows-alt-h {
-    background: rgba(0,0,0,0.3);
+    background: rgba(0, 0, 0, 0.3);
     cursor: se-resize;
     color: #FFF;
 }
+
 .ui-droppable-hover {
-    background: rgba(0,0,0,0.2);
+    background: rgba(0, 0, 0, 0.2);
 }
+
 img[data-piece] {
     -webkit-user-drag: none;
     -khtml-user-drag: none;
@@ -40,6 +46,8 @@ img[data-piece] {
     -o-user-drag: none;
     user-drag: none;
 }
+
 .valid_squares {
-    background: rgba(130, 202, 130, 0.822);
+    background: rgba(132, 223, 132, 0.801);
+    box-shadow: #000;
 }

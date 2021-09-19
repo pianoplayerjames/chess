@@ -78,7 +78,7 @@
                         <img src='https://images.chesscomfiles.com/uploads/v1/user/152277913.9a719931.100x100o.1d81f31c2254.jpeg' class='float-start rounded p-2 pe-3' />
                         <span class="badge m-2 float-end text-light">1748</span>
                         <a class="nav-link text-white" aria-current="page" href="#"><i class="fas fa-crown text-light"></i> James</a>
-                        <h1 class="text-white ps-3">01:48</h1>
+                        <h1 id='timer' class="text-white ps-3"></h1>
                     </div>
                     <div class="btn-group" role="group" aria-label="Basic example">
                         <button type="button" class="btn btn-success"><i class="fas fa-arrow-circle-left"></i> takeback</button>
