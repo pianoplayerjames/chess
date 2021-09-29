@@ -1,7 +1,4 @@
-body {
-    background: #000 url('../img/bg.jpeg') no-repeat center center fixed;
-    background-size: cover;
-}
+body {}
 
 .board {
     width: 600px;
@@ -48,6 +45,16 @@ img[data-piece] {
 }
 
 .valid_squares {
-    background: rgba(132, 223, 132, 0.801);
+    background: rgba(0, 255, 0, 0.5);
+    border: 1px rgba(13, 138, 24, 0.527) solid;
     box-shadow: #000;
+}
+
+.trans_bg {
+    background: #00000047 !important;
+    color: #FFF;
+}
+
+.cursor {
+    cursor: pointer;
 }

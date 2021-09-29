@@ -3,11 +3,11 @@ $(function() {
     capture_sound = $("<audio>", { src: "assets/sounds/capture.mp3", preload: "auto" }).appendTo("body");
     check_sound = $("<audio>", { src: "assets/sounds/check.wav", preload: "auto" }).appendTo("body");
     game_end_sound = $("<audio>", { src: "assets/sounds/game_end.wav", preload: "auto" }).appendTo("body");
-    draw_board();
-    clock();
+
 });
 
 function draw_board() {
+    console.log('board drawn');
     var turn = "white";
     var rank = ["1", "2", "3", "4", "5", "6", "7", "8"];
     var file = ["a", "b", "c", "d", "e", "f", "g", "h"];
@@ -362,34 +362,6 @@ function draw_board() {
 
 }
 
-var _STOP = 0;
-
-var value = 1999;
-
-function settimer()
-
-{
-    var svalue = value.toString();
-
-    if (svalue.length == 3)
-
-        svalue = '0' + svalue;
-    else if (svalue.length == 2)
-        svalue = '00' + svalue;
-    else if (svalue.length == 1)
-        svalue = '000' + svalue;
-    else if (value == 0)
-        svalue = '0000';
-    document.getElementById('timer').innerHTML = svalue[0];
-    document.getElementById('timer').innerHTML = svalue[1];
-    document.getElementById('timer').innerHTML = svalue[2];
-    document.getElementById('timer').innerHTML = svalue[3];
-    value--;
-
-    if (_STOP == 0 && value >= 0) setTimeout("settimer();", 10);
-}
-
-setTimeout("settimer()", 10);
 
 function flip() {
     var axis = $('.board').data("axis");
